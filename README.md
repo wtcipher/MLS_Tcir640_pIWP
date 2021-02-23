@@ -2,13 +2,13 @@
 regress MLS 640GHz Tcir to CALIOP ice observations, so as to rebuild an alternative longterm, consistent ice product for the entire MLS lifespan. The rebuilt pIWP is focused on the upper troposphere to lower stratosphere 10-20 km, covering 64 degree N-S, from 2004 to 2020 (the latest so far).
 
 
-**There are two files in this repositary. 
-1. mlsTcir_calIWP_matched_cat_B10ch1_ALL_8x4_2004-2020.sav**
-2. retrieval_final_anom_corr_B10Ch1_ALL_8x4_2004-2020.sav
+**There are two files in this repositary. **
+**1. mlsTcir_calIWP_matched_cat_B10ch1_ALL_8x4_2004-2020.sav**
+**2. retrieval_final_anom_corr_B10Ch1_ALL_8x4_2004-2020.sav**
 
 
 
-** A. The first file "mlsTcir_calIWP_matched_cat_B10ch1_ALL_8x4_2004-2020.sav" has the filtered and gridded (8x4 longitude by latitude) MLS 640-GHz cloud-induced radiances (Tcir), matched to the CALIOP data availability. This file has the following fields saved.**
+**A. The first file "mlsTcir_calIWP_matched_cat_B10ch1_ALL_8x4_2004-2020.sav" has the filtered and gridded (8x4 longitude by latitude) MLS 640-GHz cloud-induced radiances (Tcir), matched to the CALIOP data availability. This file has the following fields saved.**
 
    **CALIOP (CAL) related variables**
    timeCAL:  time structure of CALIOP, including yrArr[105], monArr[105], lArr[105], fArr[105], 2008-2017.
