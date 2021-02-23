@@ -37,6 +37,7 @@ regress MLS 640GHz Tcir to CALIOP ice observations, so as to rebuild an alternat
     lonRng, lonStep, nlonGrid, lonGrid, lonEdgeL, lonEdgeR: longitude range, step, grids, and the boundaries
     latRng, latStep, nlatGrid, latGrid, latEdgeL, latEdgeR: latitude range, step, grids, and the boundaries
     isoh, isoh_low, isoh_high, nisoh: vertical levels and their boundaries
+    
 Note that in order to seek the fair regression correlation between MLS Tcir and CALIOP pIWP, we sampled MLS at the CALIOP data availability. The CALIOP data availability can be found here: https://www-calipso.larc.nasa.gov/tools/data_avail/index.php?d=2017
 That said, in pairing MLS to CALIOP data, we ignored those following dates as CALIOP data are not available:
 2009/02 17-28, 10d;
@@ -64,6 +65,14 @@ That said, in pairing MLS to CALIOP data, we ignored those following dates as CA
 
 
 
-The second file "retrieval_final_anom_corr_B10Ch1_ALL_8x4_2004-2020.sav" has the final retrieved pIWP based on the regression relation built from MLS 640-GHz Tcir to CALIOP pIWP.
+**B. The second file "retrieval_final_anom_corr_B10Ch1_ALL_8x4_2004-2020.sav" has the final retrieved pIWP based on the regression relation built from MLS 640-GHz Tcir to CALIOP pIWP.
+
+Based on file 1 "mlsTcir_calIWP_matched_cat_B10ch1_ALL_8x4_2004-2020.sav", we have the regreession 
+         pIWP(j,k,t)=α(j,k,t)   [-T_cir (j,k,t)]+ β(j,k,t)      
+where α is the slope in unit of g/m2/K that represents the rate of change in pIWP as Tcir (in unit of K) changes, and β is the intercept in unit of g/m2; all in functions of latitude bands (j), altitudes (k), and months (t). 
+
+Then, we calculate the climatology of coeffects α(j,k,t) into α^' (j,k,12), and climatology of β(j,k,t) into β^' (j,k,12). The primed coefficients –  α^' (j,k,12) and β^' (j,k,12), make up the final climatological, empirical relation re-applied to Tcir to obtain monthly MLS pIWP.  
+
+
 
 
