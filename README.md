@@ -25,23 +25,27 @@ regress MLS 640GHz Tcir to CALIOP ice observations, so as to rebuild an alternat
    Tcir[45, 45, 21, 197]: MLS 640-GHz Tcir after filtering, in K. 
 
 
-    **matched MLS and CALIOP records and the regression of the two in functioins of latitude, altitudes, and months**
-    timeMCH[105]: matched months, including yrArr[105], monArr[105], lArr[105], fArr[105], 2008-2017.
-    rgnLat[2, 20]: 20 latitude bands running from 82S to 82N with 8 degree intervals, so 
-    rgnTitle[20]: the string of those 20 latitude bands, namely 
+
+   **matched MLS and CALIOP records and the regression of the two in functioins of latitude, altitudes, and months**
+   timeMCH[105]: matched months, including yrArr[105], monArr[105], lArr[105], fArr[105], 2008-2017.
+   rgnLat[2, 20]: 20 latitude bands running from 82S to 82N with 8 degree intervals, so 
+   rgnTitle[20]: the string of those 20 latitude bands, namely 
          [82-72S], [72-64S], [64-56S], [56-48S], [48-40S], [40-32S], [32-24S], [24-16S], [16-8S], [8S-0], 
          [0, 8N], [8-16N], [16-24N], [24-32N], [32-40N], [40-48N], [48-56N], [56-64N], [64-72N], [72-82N]
-    corr_lev[21]: 21 levels from 0 to 20km 
-    corr[21, 21, 105, 20]: at each level, for each month and in each latitude bands
-    corr_sig[21, 21, 105, 20]: correlation significant or not (1-significant, 0-not significant)
-    slope[21, 21, 105, 20]: regression slope within each latitude bands at each level, for each month
-    const[21, 21, 105, 20]: regression constant within each latitude bands at each level, for each month
+   corr_lev[21]: 21 levels from 0 to 20km 
+   corr[21, 21, 105, 20]: at each level, for each month and in each latitude bands
+   corr_sig[21, 21, 105, 20]: correlation significant or not (1-significant, 0-not significant)
+   slope[21, 21, 105, 20]: regression slope within each latitude bands at each level, for each month
+   const[21, 21, 105, 20]: regression constant within each latitude bands at each level, for each month
   
-    **definition of grids: MLS and CALIOP data are gridded into those grids and vertical intervals**
+  
+  
+   **definition of grids: MLS and CALIOP data are gridded into those grids and vertical intervals**
     lonRng, lonStep, nlonGrid, lonGrid, lonEdgeL, lonEdgeR: longitude range, step, grids, and the boundaries
     latRng, latStep, nlatGrid, latGrid, latEdgeL, latEdgeR: latitude range, step, grids, and the boundaries
     isoh, isoh_low, isoh_high, nisoh: vertical levels and their boundaries
-    
+  
+  
 Note that in order to seek the fair regression correlation between MLS Tcir and CALIOP pIWP, we sampled MLS at the CALIOP data availability. The CALIOP data availability can be found here: https://www-calipso.larc.nasa.gov/tools/data_avail/index.php?d=2017
 That said, in pairing MLS to CALIOP data, we ignored those following dates as CALIOP data are not available:
 2009/02 17-28, 10d;
