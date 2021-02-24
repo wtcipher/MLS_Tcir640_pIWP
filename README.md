@@ -51,24 +51,24 @@ vertical levels and their boundaries, 0-20 km with 1km interval
 
 Note that in order to seek the fair regression correlation between MLS Tcir and CALIOP pIWP, we sampled MLS at the CALIOP data availability. The CALIOP data availability can be found here: https://www-calipso.larc.nasa.gov/tools/data_avail/index.php?d=2017
 That said, in pairing MLS to CALIOP data, we ignored those following dates as CALIOP data are not available:
-2009/02 17-28, 10d;
-2009/03 01-12, 12d;
-2011/06 07-14, 8d;
-2012/01 23-31, 9d;
-2012/02 01-02, 2d;
-2012/03 07-21, 15d;
-2013/05 16-27, 12d;
-2014/01 06-13, 8d;
-2014/02 21-28, 8d;
-2015/06 19-29, 11d;
-2016/01 28-31, 4d;
-2016/02 01-28, 28d;
-2016/03 01-14, 14d;
-2017/07 15-31, 17d;
-2017/08 01-04, 4d;
-2017/09 05-15, 11d;
-2018/09 13-24, 14d;
-2018/10 15-18, 4d.
+> 2009/02 17-28, 10d;
+> 2009/03 01-12, 12d;
+> 2011/06 07-14, 8d;
+> 2012/01 23-31, 9d;
+> 2012/02 01-02, 2d;
+> 2012/03 07-21, 15d;
+> 2013/05 16-27, 12d;
+> 2014/01 06-13, 8d;
+> 2014/02 21-28, 8d;
+> 2015/06 19-29, 11d;
+> 2016/01 28-31, 4d;
+> 2016/02 01-28, 28d;
+> 2016/03 01-14, 14d;
+> 2017/07 15-31, 17d;
+> 2017/08 01-04, 4d;
+> 2017/09 05-15, 11d;
+> 2018/09 13-24, 14d;
+> 2018/10 15-18, 4d.
 
 
 
