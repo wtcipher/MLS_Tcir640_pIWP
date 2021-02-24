@@ -3,9 +3,10 @@
 
 Regress MLS 640GHz Tcir to CALIOP ice observations, so as to rebuild an alternative longterm, consistent ice product for the entire MLS lifespan. The rebuilt pIWP is focused on the upper troposphere to lower stratosphere 10-20 km, covering 64 degree N-S, from 2004 to 2020 (the latest so far).
 
-**There are two files in this repositary.**
+**There are two IDL SAV files in this repositary.**
 - **mlsTcir_calIWP_matched_cat_B10ch1_ALL_8x4_2004-2020.sav**
 - **retrieval_final_anom_corr_B10Ch1_ALL_8x4_2004-2020.sav**
+In IDL, load those files to have the necessary variables store.
 
 
 ### 1.  mlsTcir_calIWP_matched_cat_B10ch1_ALL_8x4_2004-2020.sav
