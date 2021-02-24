@@ -12,9 +12,12 @@ Regress MLS 640GHz Tcir to CALIOP ice observations, so as to rebuild an alternat
 This has the filtered and gridded (8x4 longitude by latitude) MLS 640-GHz cloud-induced radiances (Tcir), matched to the CALIOP data availability. This file has the following fields saved.
 
 - **definition of grids: MLS and CALIOP data are gridded into those grids and vertical intervals**
-**lonRng, lonGrid[45], lonEdgeL[45], lonEdgeR[45]**: longitude grids 0-360 with interval of 8 degrees
-**latRng, latGrid[45], latEdgeL[45], latEdgeR[45]**: latitude grids 90S to 90N with interval of 4 degrees
-**isoh[21], isoh_low[21], isoh_high[21]**: vertical levels and their boundaries, 0-20 km with 1km interval
+**lonRng, lonGrid[45], lonEdgeL[45], lonEdgeR[45]**: 
+longitude grids 0-360 with interval of 8 degrees
+**latRng, latGrid[45], latEdgeL[45], latEdgeR[45]**: 
+latitude grids 90S to 90N with interval of 4 degrees
+**isoh[21], isoh_low[21], isoh_high[21]**: 
+vertical levels and their boundaries, 0-20 km with 1km interval
 
  -  **CALIOP (CAL) related variables**
     **timeCAL**:  time structure of CALIOP 2008-2017, including 
