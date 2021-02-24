@@ -62,7 +62,7 @@ This file has the following fields saved:
     **const[21, 21, 105, 20]**: regression constant within each latitude bands at each level, for each month, 2008 Jan - 2016 Sep, total 105 months. 
  
 
-Note that in order to seek the fair regression correlation between MLS Tcir and CALIOP pIWP, we sampled MLS at the CALIOP data availability. The CALIOP data availability can be found here: https://www-calipso.larc.nasa.gov/tools/data_avail/index.php?d=2017
+Note that in order to seek the fair regression correlation between MLS Tcir and CALIOP pIWP, we sampled MLS at the CALIOP data availability. The CALIOP data availability can be found here: https://www-calipso.larc.nasa.gov/tools/data_avail/
 That said, in pairing MLS to CALIOP data, we ignored those following dates as CALIOP data are not available:
 > 2009/02 17-28, 10d;
 > 
@@ -99,6 +99,11 @@ That said, in pairing MLS to CALIOP data, we ignored those following dates as CA
 > 2018/09 13-24, 14d;
 > 
 > 2018/10 15-18, 4d.
+
+
+
+
+
 
 
 
