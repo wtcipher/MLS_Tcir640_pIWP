@@ -4,8 +4,8 @@
 Regress MLS 640GHz Tcir to CALIOP ice observations, so as to rebuild an alternative longterm, consistent ice product for the entire MLS lifespan. The rebuilt pIWP is focused on the upper troposphere to lower stratosphere 10-20 km, covering 64 degree N-S, from 2004 to 2020 (the latest so far).
 
 **There are two IDL SAV files in this repositary.**
-- **mlsTcir_calIWP_matched_cat_B10ch1_ALL_8x4_2004-2020.sav**
-- **retrieval_final_anom_corr_B10Ch1_ALL_8x4_2004-2020.sav**
+- **1. mlsTcir_calIWP_matched_cat_B10ch1_ALL_8x4_2004-2020.sav**
+- **2. retrieval_final_anom_corr_B10Ch1_ALL_8x4_2004-2020.sav**
 
 
 In IDL, load those files to have the necessary variables store.
@@ -152,8 +152,5 @@ This file has the following fields saved:
     **RgnSlopeClim[21, 21, 12, 20]**: The Climatology of slope α', calculated from **slope[21, 21, 105, 20]** from data 1. The four dimension represent nlev, nlev, 12 climatological months, and 20 latitude bands defined in **rgnLat[2, 20]** and **rgnTitle[20]** from data 1.
     
     **RgnConstClim[21, 21, 12, 20]**: The Climatology of slope β', calculated from **const[21, 21, 105, 20]** from data 1. The four dimension represent nlev, nlev, 12 climatological months, and 20 latitude bands defined in **rgnLat[2, 20]** and **rgnTitle[20]** from data 1.
-    
-    
-    RgnSlopeClim, RgnConstClim, $
     
     
