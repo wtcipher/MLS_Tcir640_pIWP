@@ -29,7 +29,7 @@ This file has the following fields saved:
               
     **pIWP_lev[21]**: CALIOP pIWP levels in interval of 1 km. So 10 means integrated 10-20 km.
     
-    **pIWP[45, 45, 21, 105]**: CALIOP partial ice water path integrated from certain altitude to 20km, in units of g/m2
+    **pIWP[45, 45, 21, 105]**: CALIOP partial ice water path integrated from certain altitude to 20km, in units of g/m2, 2008 Jan - 2016 Sep, total 105 months.
  
  
  - **MLS related variables**
@@ -53,13 +53,13 @@ This file has the following fields saved:
           
     **corr_lev[21]**: 21 levels from 0 to 20km 
     
-    **corr[21, 21, 105, 20]**: at each level, for each month and in each latitude bands
+    **corr[21, 21, 105, 20]**: at each level, for each month and in 20 latitude bands, 2008 Jan - 2016 Sep, total 105 months.
     
-    **corr_sig[21, 21, 105, 20]**: correlation significant or not (1-significant, >0-not significant)
+    **corr_sig[21, 21, 105, 20]**: correlation significant or not (1-significant, >0-not significant), 2008 Jan - 2016 Sep, total 105 months.
     
-    **slope[21, 21, 105, 20]**: regression slope within each latitude bands at each level, for each month
+    **slope[21, 21, 105, 20]**: regression slope within each latitude bands at each level, for each month, 2008 Jan - 2016 Sep, total 105 months.
     
-    **const[21, 21, 105, 20]**: regression constant within each latitude bands at each level, for each month 
+    **const[21, 21, 105, 20]**: regression constant within each latitude bands at each level, for each month, 2008 Jan - 2016 Sep, total 105 months. 
  
 
 Note that in order to seek the fair regression correlation between MLS Tcir and CALIOP pIWP, we sampled MLS at the CALIOP data availability. The CALIOP data availability can be found here: https://www-calipso.larc.nasa.gov/tools/data_avail/index.php?d=2017
@@ -120,7 +120,7 @@ This file has the following fields saved:
     **pIWP_lev[21]**: CALIOP pIWP levels in interval of 1 km. 
                   So 10 means integrated 10-20 km.
     
-    **pIWP_CAL[45, 45, 21, 105]**: CALIOP partial ice water path integrated from certain altitude to 20km, in units of g/m2
+    **pIWP_CAL[45, 45, 21, 105]**: CALIOP pIWP from certain altitude to 20km, g/m2, 2008 Jan - 2016 Sep, total 105 months.
  
  
  -  **MLS related variables**
@@ -129,6 +129,14 @@ This file has the following fields saved:
     
     **pIWP_lev[21]**: MLS derived pIWP  at 21 tangent heights from 0 to 20 km. 
     
-    **pIWP_MLS[45, 45, 21, 197]**: MLS 640-GHz Tcir derived pIWP, g/m2. 
+    **pIWP_MLS[45, 45, 21, 197]**: MLS 640-GHz Tcir derived pIWP from certain altitude to 20km, g/m2, 2004 Aug - 2020 Dec.
+    
+ -  **regression coefficients**
+    **RgnSlopeClim[21, 21, 12, 20]**: The Climatology of slope α', calculated from **slope[21, 21, 105, 20]** from data 1. The four dimension represent nlev, nlev, 12 climatological months, and 20 latitude bands defined in **rgnLat[2, 20]** and **rgnTitle[20]** from data 1.
+    
+    **RgnConstClim[21, 21, 12, 20]**: The Climatology of slope β', calculated from **const[21, 21, 105, 20]** from data 1. The four dimension represent nlev, nlev, 12 climatological months, and 20 latitude bands defined in **rgnLat[2, 20]** and **rgnTitle[20]** from data 1.
+    
+    
+    RgnSlopeClim, RgnConstClim, $
     
     
